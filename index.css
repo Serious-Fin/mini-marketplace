@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 95px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_logo {
+    height: 100%;
+}
+
+.header_icon {
+    height: 32px;
+}
+
+.picture_section {
+    background-image: url("/static/landing_page_photo.jpg");
+    height: calc(100vh - 95px);
+    background-size: cover;
+    background-position: center;
+
+    display: none;
+}
+
+.black_overlay {
+    background-color: rgba(0, 0, 0, 0.500);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    box-sizing: border-box;
+}
+
+.call_to_action_text {
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-size: 28pt;
+    width: 12ch;
+}
+
+.all_items {
+    height: 200vh;
+    background-color: #CEA03B;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid black;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 30px;
+}
+
+.product_name {
+    font-weight: 700;
+    font-size: 16pt;
+}
+
+.product_cost {
+    font-size: 14pt;
+}
+
+.product_images {
+    max-width: 500px;
+}
+
+.main_image {
+    width: 100%;
+    height: auto;
+    border-right: 4px solid #913652;
+    border-bottom: 4px solid #913652;
+    border-top-left-radius: 10px;
+    box-sizing: border-box;
+}
+
+.minimized_image {
+    width: calc((100% / 3) - 20px);
+    border-right: 3px solid #913652;
+    border-bottom: 3px solid #913652;
+    border-top-left-radius: 10px;
+}
+
+.product_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_add_to_cart_btn {
+    padding: 7px 12px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #913652;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
+}
+
+@media (min-width: 768px) {
+    /* styles for tablet layout */
+}
+
+@media (min-width: 1024px) {
+    /* styles for desktop layout */
+}

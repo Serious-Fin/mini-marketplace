@@ -6,29 +6,49 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <img  src="/static/logo.png" alt="abstract logo of a flying bird from a side angle" />
-            <!-- shop svg -->
+        <header id="header">
+            <img  src="/static/logo.png" alt="abstract logo of a flying bird from a side angle" id="header_logo" />
+            <img src="/static/icon.svg" alt="abstract shopping cart icon" class="header_icon" />
         </header>
         <main>
-            <section>
-                <!-- image as background -->
-                <!-- darker overlay -->
-                <!-- text -->
+            <section class="picture_section">
+                <div class="black_overlay">
+                    <p class="call_to_action_text">Match your clothes with the summer</p>
+                </div>
             </section>
-            <section>
-                <!-- text BROWSE THE PRODUCTS -->
-                <article>
-                    <!-- product name -->
-                     <!-- cost -->
-                      <!-- product name -->
-                       <!-- main image -->
-                        <!-- all side images -->
-                         <!-- size selectoin -->
-                          <!-- add to cart btn -->
+            <section class="all_items">
+                <article class="product">
+                    <p class="product_name">Hawaiian shirt with line pattern</p>
+                    <p class="product_cost">€ 41,99</p>
+                    <div class="product_images">
+                        <img class="main_image" src="/static/shirt_1_2.jpg" />
+                        <img class="minimized_image" src="/static/shirt_1_1.jpg" />
+                        <img class="minimized_image" src="/static/shirt_1_1.jpg" />
+                        <img class="minimized_image" src="/static/shirt_1_1.jpg" />
+                    </div>
+                    <form class="product_form">
+                        <label for="sizes">
+                            Sizes:
+                            <select name="sizes" id="sizes">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </label>
+
+                        
+                        <input class="product_add_to_cart_btn" type="submit" value="Add to cart">
+                    </form>
                 </article>
             </section>
         </main>
